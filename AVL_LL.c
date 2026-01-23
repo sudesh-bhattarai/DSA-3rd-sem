@@ -43,4 +43,5 @@ int main() {
     printTreeBefore();
     root = LLrotate(root);
     printTreeAfter();
+return 0;
 }

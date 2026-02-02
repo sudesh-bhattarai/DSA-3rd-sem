@@ -54,7 +54,7 @@ int main() {
     for (int i = 0; i < edges; i++) {
         printf("Enter edge (u v): ");
         scanf("%d %d", &u, &v);
-        
+        addEdge(graph, u, v);
     }
     displayGraph(graph);
     return 0;

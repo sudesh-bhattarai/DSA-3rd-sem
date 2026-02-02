@@ -46,13 +46,15 @@ void displayGraph(struct Graph* graph) {
 
 int main() {
     int vertices, edges, u, v;
+    printf("Enter the number of vertices: ");
+    scanf("%d", &vertices);
     struct Graph* graph = createGraph(vertices);
     printf("Enter the number of edges: ");
     scanf("%d", &edges);
     for (int i = 0; i < edges; i++) {
         printf("Enter edge (u v): ");
         scanf("%d %d", &u, &v);
-        addEdge(graph, u, v);
+        
     }
     displayGraph(graph);
     return 0;

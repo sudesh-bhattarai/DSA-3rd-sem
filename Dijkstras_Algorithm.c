@@ -42,12 +42,14 @@ void dijkstra(int graph[MAX][MAX], int src, int n)
     }
 }
 int main() {
-    
+    int graph[MAX][MAX];
+    int n, src;
+    printf("Enter the number of vertices: ");
+    scanf("%d", &n);
     printf("Enter the adjacency matrix (use 0 for no edge):\n");
     for (int i = 0; i < n; i++) 
     {
-        for (int j = 0; j < n; j++) 
-        {
+        
             scanf("%d", &graph[i][j]);
         }
     }

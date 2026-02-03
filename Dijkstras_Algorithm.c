@@ -25,6 +25,7 @@ void dijkstra(int graph[MAX][MAX], int src, int n)
         visited[i] = false;
     }
     dist[src] = 0;
+
     for (int count = 0; count < n - 1; count++) 
     {
         int u = findMinDistance(dist, visited, n);
@@ -36,7 +37,9 @@ void dijkstra(int graph[MAX][MAX], int src, int n)
             }
         }
     }
+
     printf("Vertex\tDistance from Source\n");
+    
     for (int i = 0; i < n; i++) {
         printf("%d\t\t%d\n", i, dist[i]);
     }

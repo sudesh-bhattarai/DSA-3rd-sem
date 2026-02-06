@@ -25,8 +25,7 @@ bool areIsomorphic(int graph1[MAX][MAX], int graph2[MAX][MAX], int n) {
 int main() {
     int n, edges1, edges2, u, v;
     int graph1[MAX][MAX] = {0};
-    int graph2[MAX][MAX] = {0};
-
+    
     printf("Enter the number of vertices: ");
     scanf("%d", &n);
 
@@ -49,7 +48,12 @@ int main() {
     }
 
     printf("Enter the edges for Graph 2 (u v):\n");
-    
+    for (int i = 0; i < edges2; i++) {
+        scanf("%d %d", &u, &v);
+        graph2[u][v] = 1;
+        graph2[v][u] = 1;  // For undirected graph
+    }
+
     if (areIsomorphic(graph1, graph2, n)) {
         printf("Graphs are isomorphic.\n");
     } else {

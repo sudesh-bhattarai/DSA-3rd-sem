@@ -25,7 +25,8 @@ bool areIsomorphic(int graph1[MAX][MAX], int graph2[MAX][MAX], int n) {
 int main() {
     int n, edges1, edges2, u, v;
     int graph1[MAX][MAX] = {0};
-    
+    int graph2[MAX][MAX] = {0};
+
     printf("Enter the number of vertices: ");
     scanf("%d", &n);
 

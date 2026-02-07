@@ -23,7 +23,7 @@ struct Node* LLrotate(struct Node* y) {
 }
 /* Print tree in textbook style */
 void printTreeBefore() {
-    printf("Before LL Rotation:\n\n");
+    printf("Before LL Rotation :\n\n");
     printf("    30\n");
     printf("   /\n");
     printf("  20\n");
@@ -31,7 +31,7 @@ void printTreeBefore() {
     printf("10\n\n");
 }
 void printTreeAfter() {
-    printf("After LL Rotation:\n\n");
+    printf("After LL Rotation :\n\n");
     printf("   20\n");
     printf("  /  \\\n");
     printf("10   30\n\n");

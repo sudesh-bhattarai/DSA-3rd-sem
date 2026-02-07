@@ -46,7 +46,8 @@ void dijkstra(int graph[MAX][MAX], int src, int n)
 }
 int main() {
     int graph[MAX][MAX];
-    int n, src;
+    int n;
+    int src;
     printf("Enter the number of vertices: ");
     scanf("%d", &n);
     printf("Enter the adjacency matrix (use 0 for no edge):\n");

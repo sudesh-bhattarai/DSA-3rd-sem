@@ -17,7 +17,8 @@ int main() {
     int min, cost = 0;
     int a, b, u, v;
     int graph[10][10];
-    
+    printf("Enter number of vertices: ");
+    scanf("%d", &n);
     printf("\nEnter adjacency matrix (0 for no edge):\n");
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {

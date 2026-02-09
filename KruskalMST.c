@@ -24,7 +24,7 @@ int main() {
         for (int j = 1; j <= n; j++) {
             scanf("%d", &graph[i][j]);
             if (graph[i][j] == 0)
-                graph[i][j] = 999;
+                graph[i][j] = 999; 
         }
     }
     printf("\nEdges in Minimum Spanning Tree:\n");

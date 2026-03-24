@@ -17,6 +17,7 @@ Node* newNode(char c, int f) {
     node->left = node->right = NULL; 
     return node; 
 } 
+
 // Print Huffman codes by traversing the tree 
 void printCodes(Node* root, int arr[], int top) { 
     if(root->left) { 

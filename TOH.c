@@ -10,6 +10,7 @@ void hanoi(int n, char source, char destination, char auxiliary)
     printf("move disk %d from %c to %c\n",n,source,destination);
     hanoi(n-1,auxiliary,destination,source);
 }
+
 int main()
 {
     int n;
